@@ -1,6 +1,13 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import InitMocks from "@/app/components/InitMocks";
+
+if (process.env.NEXT_PUBLIC_API_MOCKING === "true" && process.env.NEXT_RUNTIME === "nodejs") {
+  console.log("MOCKING MODE");
+  const {server} = await import ("./../mock/node")
+  server.listen()
+}
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,9 +31,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <InitMocks/>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
       </body>
     </html>

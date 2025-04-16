@@ -3,11 +3,15 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 This PoC uses MSW for mocking requests in NextJS 15 application. 
 NextJS 15 supports client side and server side rendering.
-MSW helps to mock requests made by both and use the same datasource.
+MSW helps to mock requests made by both, browser and node, using the same datasource.
+
+Additionally, in this PoC you can see Vitest and MSW working together to mock browser requests.
 
 See more:
 * [MSW docs](https://mswjs.io/docs/)
 * [NextJS 15 example PR](https://github.com/mswjs/examples/pull/101)
+* [Vitest](https://vitest.dev/api/)
+
 
 ## Getting Started
 
@@ -28,8 +32,6 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-##
 
 ## Learn More
 

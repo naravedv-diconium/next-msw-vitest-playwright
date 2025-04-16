@@ -1,17 +1,24 @@
 # MSW PoC with NextJS
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-This PoC uses MSW for mocking requests in NextJS 15 application. 
+This PoC uses MSW for mocking requests in NextJS 15 application to enable frontend work when backend is not available.
 NextJS 15 supports client side and server side rendering.
 MSW helps to mock requests made by both, browser and node, using the same datasource.
 
-Additionally, in this PoC you can see Vitest and MSW working together to mock browser requests.
+Additionally, in this PoC you can see Vitest and Playwright working together with MSW to mock requests.
 
 See more:
 * [MSW docs](https://mswjs.io/docs/)
 * [NextJS 15 example PR](https://github.com/mswjs/examples/pull/101)
 * [Vitest](https://vitest.dev/api/)
+* [Playwright](https://playwright.dev/docs/intro)
 
+To run Vitest use `npm run test`  
+To run Playwright use `npx playwright test`
+To see Playwright report use `npx playwright show-report`
+
+### Note
+Vitest tests are next to tested components. Playwright tests are in `e2e` directory.
 
 ## Getting Started
 

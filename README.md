@@ -3,9 +3,9 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 This PoC uses MSW for mocking requests in NextJS 15 application to enable frontend work when backend is not available.
 NextJS 15 supports client side and server side rendering.
-MSW helps to mock requests made by both, browser and node, using the same datasource.
+MSW mocks requests made by both, browser and node, using the same datasource.
 
-Additionally, in this PoC you can see Vitest and Playwright working together with MSW to mock requests.
+Additionally, in this PoC you can see Vitest and Playwright working together with MSW to mock requests in automated tests.
 
 See more:
 * [MSW docs](https://mswjs.io/docs/)

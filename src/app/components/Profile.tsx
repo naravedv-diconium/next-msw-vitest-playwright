@@ -11,7 +11,7 @@ export default function Profile({initial}: { initial: any }) {
       const res = await fetch(`https://api.github.com/users/${user}`);
       const data = await res.json();
       setProfile(data);
-    }, [])
+    }, [setProfile])
 
   return (
     <>
